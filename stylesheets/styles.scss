@@ -1,0 +1,80 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Arial', sans-serif;
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Estilos generales
+body {
+    font-family: $font-stack;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+// Encabezado
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 1rem;
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        @include flex-center;
+
+        li {
+            margin: 0 1rem;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// Productos
+#productos {
+    padding: 2rem;
+
+    .producto {
+        background-color: white;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        h3 {
+            margin-top: 0.5rem;
+        }
+
+        button {
+            background-color: $secondary-color;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+}
+
+// Pie de página
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
