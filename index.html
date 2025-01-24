@@ -10,27 +10,42 @@
 
 <body>
     <header>
-        <h1>Digital Wave</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
+        <nav class="navbar bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" class="img-fluid" width="159 rem" alt="Digital Wave">
+                </a>
+                <form class="d-flex d-none d-md-inline-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <ul class="nav pt-2 d-none d-md-inline-flex">
+                <li class="nav-item">
+                    <a class="nav-link active letter-spacing" aria-current="page" href="#">Categoría 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Categoría 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categoría 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true">Disabled</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="productos">
-            <h2>Nuestros Productos</h2>
-            <div class="producto"> <img src="img/producto1.jpg" alt="Producto 1">
-                <h3>Producto 1</h3>
-                <p>Descripción del producto 1.</p> <button>Comprar</button>
-            </div> <!-- Más productos aquí -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Tienda en Línea. Todos los derechos reservados.</p>
-    </footer>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sapiente doloremque quasi illum porro molestias
+        deleniti architecto tenetur qui reiciendis placeat nostrum veniam, accusamus tempore ut recusandae neque
+        consectetur atque!
+    </div>
 </body>
 
 </html>

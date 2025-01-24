@@ -1,80 +1,40 @@
-// Variables
-$primary-color: #3498db;
-$secondary-color: #2ecc71;
-$font-stack: 'Arial', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-// Mixins
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// Funciones, variables y mixins de Bootstrap
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Paleta de colores personalizada
+$theme-colors: (
+    "primary": $blue-900,
+    "secondary": $blue-500,
+    "success": $green,
+    "info": $blue-200,
+    "warning": $yellow,
+    "danger": $red,
+    "light": $black,
+    "dark": $gray-900 
+);
+
+$link-color: $light;
+$link-hover-color: $info;
+$btn-hover-bg: $info;
+$font-family-sans-serif: "Lato", "Roboto";
+$letter-spacing: 0.03rem;
+
+// Importa Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// header {
+//     background-color: $primary-color;
+// }
+
+.nav-link {
+    letter-spacing: $letter-spacing;
+    
 }
 
-// Estilos generales
-body {
-    font-family: $font-stack;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-// Encabezado
-header {
-    background-color: $primary-color;
-    color: white;
-    padding: 1rem;
-
-    nav ul {
-        list-style: none;
-        padding: 0;
-        @include flex-center;
-
-        li {
-            margin: 0 1rem;
-
-            a {
-                color: white;
-                text-decoration: none;
-            }
-        }
-    }
-}
-
-// Productos
-#productos {
-    padding: 2rem;
-
-    .producto {
-        background-color: white;
-        padding: 1rem;
-        margin-bottom: 2rem;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-        img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-
-        h3 {
-            margin-top: 0.5rem;
-        }
-
-        button {
-            background-color: $secondary-color;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-    }
-}
-
-// Pie de página
-footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+.nav-link:hover{
+    color: #34db42 !important   ;
 }
