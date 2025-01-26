@@ -6,22 +6,12 @@
 @import "../node_modules/bootstrap/scss/mixins";
 
 // Paleta de colores personalizada
-$theme-colors: (
-    "primary": $blue-900,
-    "secondary": $blue-500,
-    "success": $green,
-    "info": $blue-200,
-    "warning": $yellow,
-    "danger": $red,
-    "light": $black,
-    "dark": $gray-900 
-);
 
 $link-color: $light;
-$link-hover-color: $info;
-$btn-hover-bg: $info;
+$link-hover-color: $cyan-200;
 $font-family-sans-serif: "Lato", "Roboto";
 $letter-spacing: 0.03rem;
+
 
 // Importa Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -32,9 +22,28 @@ $letter-spacing: 0.03rem;
 
 .nav-link {
     letter-spacing: $letter-spacing;
+}
+
+.bi {
+    color: $light;
+    font-size: 2rem;
+}
+
+.bi.bi-search{
+    font-size: 1rem;
+    padding: 0.3rem;
+    color: $primary;
+}
+
+button.search_btn{
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-color: $blue-300;
     
 }
 
-.nav-link:hover{
-    color: #34db42 !important   ;
+#search-input{
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    width: 25rem;
 }
