@@ -97,8 +97,8 @@
   --bs-link-color: #e9ecef;
   --bs-link-color-rgb: 233, 236, 239;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #9eeaf9;
-  --bs-link-hover-color-rgb: 158, 234, 249;
+  --bs-link-hover-color: #0dcaf0;
+  --bs-link-hover-color-rgb: 13, 202, 240;
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: #fff3cd;
@@ -11973,6 +11973,7 @@ textarea.form-control-lg {
 .bi {
   color: #e9ecef;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .bi.bi-search {
@@ -11984,11 +11985,25 @@ textarea.form-control-lg {
 button.search_btn {
   border-top-left-radius: 0%;
   border-bottom-left-radius: 0%;
-  border-color: #6ea8fe;
+  background-color: #dee2e6;
+}
+button.search_btn:hover {
+  background-color: #087990;
+  border-color: #0885B0;
+}
+button.search_btn:hover .bi.bi-search {
+  color: #e9ecef;
 }
 
 #search-input {
   border-top-right-radius: 0%;
   border-bottom-right-radius: 0%;
   width: 25rem;
+}
+#search-input:focus {
+  border-style: double;
+}
+
+.carousel-control-prev {
+  padding: 1rem;
 }/*# sourceMappingURL=styles.css.map */

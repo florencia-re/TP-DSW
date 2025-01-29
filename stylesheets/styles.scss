@@ -8,7 +8,7 @@
 // Paleta de colores personalizada
 
 $link-color: $light;
-$link-hover-color: $cyan-200;
+$link-hover-color: $cyan-500;
 $font-family-sans-serif: "Lato", "Roboto";
 $letter-spacing: 0.03rem;
 
@@ -27,23 +27,43 @@ $letter-spacing: 0.03rem;
 .bi {
     color: $light;
     font-size: 2rem;
+    cursor: pointer;
 }
 
-.bi.bi-search{
+.bi.bi-search {
     font-size: 1rem;
     padding: 0.3rem;
     color: $primary;
 }
 
-button.search_btn{
+button.search_btn {
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
-    border-color: $blue-300;
-    
+    // border-color: 0886b0af;
+    // opacity: 0.3;
+    background-color: $gray-300;
+
+    &:hover {
+        background-color: $cyan-700;
+        border-color: #0885B0;
+
+        .bi.bi-search {
+            color: $light;
+        }
+    }
 }
 
-#search-input{
+#search-input {
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
     width: 25rem;
+
+    &:focus {
+        border-style: double;
+    }
+}
+
+
+.carousel-control-prev {
+    padding: 1rem;
 }
